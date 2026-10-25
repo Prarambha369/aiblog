@@ -34,17 +34,25 @@ This project is a Python-based application that generates blog posts using OpenA
 
 ## Usage
 
-1. Run the `verify_api_key.py` script to ensure your API key is set up correctly:
+1. Set the expected environment variables in a `.env` file at the project root (never commit it — it is ignored by git):
+    ```dotenv
+    OPENAI_API_KEY="sk-your-real-key-here"
+    ```
+
+2. Install the dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. Run the `verify_api_key.py` script to ensure your API key is set up correctly:
     ```sh
     python verify_api_key.py
     ```
 
-2. Run the `blog_generator.py` script to generate a blog post:
+4. Run the `blog_generator.py` script to generate a blog post and follow the prompts:
     ```sh
     python blog_generator.py
     ```
-
-3. Follow the prompts to create your blog post.
 
 # Preview 
 ![img.png](img.png)
